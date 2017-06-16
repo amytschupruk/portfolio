@@ -1,6 +1,8 @@
-@import 'setup';
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/general';
+@import 'partials/header';
+@import 'partials/skills';
+@import 'partials/about';
+@import 'partials/work';
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
-}

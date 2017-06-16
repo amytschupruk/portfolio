@@ -1,0 +1,48 @@
+body {
+	max-width: 1920px;
+	.wrapper {
+		width: 80%;
+		margin: auto;
+
+	}
+}
+
+h2 {
+	font-family: $primaryFont;
+	font-size: 100px;
+	color: $secondaryColor;
+}
+
+h3 {
+	font-family: $primaryFont;
+	font-size: 50px;
+}
+
+h4 {
+	font-family: $primaryFont;
+	font-size: 36px;
+}
+
+h5 {
+	font-family: $secondaryFont;
+	font-size: 28px;
+}
+
+p {
+	font-family: $tertiaryFont;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+button {
+	font-family: $primaryFont;
+	font-size: 14px;
+	padding: 10px;
+	border: 2px solid black;
+}
+
+ul {
+	font-family: $secondaryFont;
+	font-size: 28px;
+	list-style: none;
+}

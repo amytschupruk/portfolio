@@ -1,3 +1,8 @@
-const ohHey = "Hello World";
+	
 
-console.log(ohHey);
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+		$('.menu').toggleClass('show');
+	});
+});
