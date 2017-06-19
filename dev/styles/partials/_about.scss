@@ -4,12 +4,17 @@
 	flex-direction: column;
 	position: relative;
 	padding: 10% 10% 0% 10%;
-	img {
+	.about__photo {
+		img {
 		width: 50%;
 		position: absolute;
 		top: 12%;
 		left: 0;
 		z-index: -1;
+		}
+	}
+	.about__photo--mobile {
+		display: none;
 	}
 	.about__text {
 		text-align: right;
@@ -25,6 +30,14 @@
 			margin-left: 51%;
 			margin-top: 0;
 			margin-bottom: 40px;
+			a {
+				color: $secondaryColor;
+				text-decoration: none;
+				border-bottom: 2px solid darkcyan;
+			}
+			a:hover {
+				border-bottom: 2px solid white;
+			}
 		}
 	}
 
@@ -32,17 +45,40 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+	.about .about__photo img {
+		display: none;
+	}
+	.about .about__photo--mobile {
+		display: flex;
+		flex-wrap: wrap;
+		img {
+			width: 100%;
+			align-self: center;
+			margin-bottom: 30px;
+			-webkit-clip-path: circle(50% at 50% 50%);
+		}
+	}
+	.about .about__text p {
+		margin-left: 0;
+		text-align: left;
+	}
+	.about h2 {
+		font-size: 65px;
+	}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	.about h2 {
-		font-size: 30px;
+		font-size: 45px;
 	}
  
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	.about h2 {
+		font-size: 35px;
+	}
 
 }

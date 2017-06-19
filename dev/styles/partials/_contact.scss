@@ -43,3 +43,24 @@
 	}
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.contact h2:after {
+		top: 260px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.contact h2:after {
+		top: 230px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.contact h2:after {
+		top: 200px;
+	}
+}
+

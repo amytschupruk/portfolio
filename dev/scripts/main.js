@@ -25,11 +25,11 @@ $(document).ready(function(){
     window.sr = ScrollReveal();
 	sr.reveal('.tile', { duration: 2000 }, 500);	
 	new WOW().init();
-	new Vivus('Layer_1', {
+	new Vivus('Layer_2', {
 		duration: 200,
-		type: 'delayed'}, vivusCallback);
+		type: 'delayed',
+		start: 'autostart'}, vivusCallback);
 	function vivusCallback(){
-		console.log(arguments, "hey")
 	}
 });	
 		
