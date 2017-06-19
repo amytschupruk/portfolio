@@ -1,48 +1,118 @@
 body {
-	max-width: 1920px;
+	max-width: 1880px;
+	overflow-x: hidden;
 	.wrapper {
 		width: 80%;
-		margin: auto;
+		margin: 0 auto;
 
 	}
 }
 
 h2 {
 	font-family: $primaryFont;
-	font-size: 100px;
 	color: $secondaryColor;
+	font-size: 100px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
 h3 {
 	font-family: $primaryFont;
+	color: $secondaryColor;
 	font-size: 50px;
 }
 
 h4 {
 	font-family: $primaryFont;
+	color: $secondaryColor;
 	font-size: 36px;
 }
 
 h5 {
 	font-family: $secondaryFont;
 	font-size: 28px;
+	color: $secondaryColor;
+	letter-spacing: 3px;
 }
 
 p {
 	font-family: $tertiaryFont;
 	font-size: 16px;
 	line-height: 25px;
+	color: $secondaryColor;
 }
 
 button {
 	font-family: $primaryFont;
 	font-size: 14px;
+	font-weight: bold;
 	padding: 10px;
 	border: 2px solid black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 ul {
 	font-family: $secondaryFont;
 	font-size: 28px;
 	list-style: none;
+}
+
+/* Grow animation Hover.css http://ianlunn.github.io/Hover/ */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+footer {
+	background: $primaryColor;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	p {
+		margin: 0;
+		display: inline-block;
+		margin: 0% 5% 0% 5%;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:hover {
+		border-bottom: 2px solid darkcyan;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h2 {
+		font-size: 80px;
+	}
+ 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	h2 {
+		font-size: 60px;
+	}
+
 }

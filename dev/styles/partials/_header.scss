@@ -10,30 +10,86 @@
 
 header {
 	height: 100vh;
-	#nav-icon {
-		float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .bg-img-container-desktop {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 15%;
+    height: 100%;
+    z-index: -1;
+  }
+  .bg-color {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 15%;
+    height: 100%;
+    background: darkcyan;
+    z-index: -2;
+
+  }
+  	#nav-icon {
+    float: right;
+    margin-top: 20px;
 	}
 	.menu {
 		position: absolute;
 		text-align: right;
 		background: white;
-		padding: 20px;
+		padding: 50px 20px;
 		right: 0;
 		margin-top: 120px;
 		margin-right: 10%;
 	}
 	.header-text {
 		text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin-right: 0;
+    width: 450px;
+
 		h2 {
 			margin-bottom: 0;
 			display: inline-block;
 			line-height: 90px;
+      background: white;
+      padding-top: 10px;
+      padding-left: 2px;
 		}
 		h5 {
-			margin-top: 20px;
-			margin-left: 8px;
+      padding-bottom: 10px;
+			padding-top: 20px;
+			padding-left: 8px;
+      margin-top: 0px;
+      background: white;
 		}
 	}
+  ul {
+      a {
+        text-decoration: none;
+        transition: 0.3s all ease;
+        color: $primaryColor;
+      }
+    li {
+      padding: 10px 5px 5px 5px;
+      border-bottom: 2px solid white;
+      transition: 0.3s all ease;
+    }
+    li:hover {
+      border-bottom: 2px solid darkcyan;
+    }
+    .no-border {
+      padding-top: 20px;
+    }
+    .no-border:hover {
+      border-bottom: 2px solid white;
+    }
+  }
 
 }
 
@@ -59,8 +115,8 @@ header {
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #d3531a;
-  border-radius: 9px;
+  background: $secondaryColor;
+  // border-radius: 9px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -104,4 +160,48 @@ header {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  header .header-text {
+    width: 100%;
+  }
+  header .bg-img-container-desktop {
+    display: none;
+  }
+  header .bg-img-container {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 15%;
+    height: 100%;
+    background-image: url('../../public/assets/background.svg');
+    background-repeat: repeat;
+    z-index: -1;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    header .bg-img-container {
+      width: 100%;
+    }
+    header .bg-color {
+      width: 100%;
+    }  
+    header .menu {
+      margin-right: 0;
+      li {
+        font-size: 24px;
+      }
+    }
+     header .header-text h2 {
+      line-height: 60px;
+     } 
+    
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

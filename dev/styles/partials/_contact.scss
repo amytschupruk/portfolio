@@ -1,0 +1,45 @@
+.contact {
+	background-color: $primaryColor;
+	color: white;
+	text-align: center;
+	position: relative;
+	padding: 110px 0px 55px 0px;
+	margin-top: 50px;
+	h2 {
+		color: white;
+		letter-spacing: 10px;
+		margin: 0;
+	}
+	h2:after {
+		content: '';
+		width: 125px;
+		height: 2px;
+		background: white;
+		position: absolute;
+		display: inline-block;
+		top: 250px;
+		left: 50%;
+		margin-left: -65px;
+	}
+	h5 {
+		margin-top: 60px;
+		color: white;
+	}
+	h3 {
+		font-size: 20px;
+		color: white;
+	}
+	.socials {
+		 a {
+		 	text-decoration: none;
+		 	color: white;
+		 	font-size: 40px;
+		 	margin: 20px;
+		 	transition: 0.3s all ease;
+		 }
+		 a:hover {
+			color: darkcyan;
+		 }
+	}
+}
+

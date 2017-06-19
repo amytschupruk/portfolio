@@ -1,5 +1,77 @@
+
+.work-title {
+	background: $primaryColor;
+	padding-top: 110px;
+	position: relative;
+	text-align: center;
+	padding-bottom: 80px;
+	h2 {
+		margin: 0px;
+		color: white;
+		letter-spacing: 10px;
+	}
+	h2:after {
+		content: '';
+		width: 125px;
+		height: 2px;
+		background: white;
+		position: absolute;
+		display: inline-block;
+		bottom: 44%;
+		left: 50%;
+		margin-left: -65px;
+	}
+	h5 {
+		color: white;
+		margin-top: 60px;
+	}
+}
+
 .work__cell {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 70px;
 	h5 {
 		font-size: 18px;
 	}
+	.work__cell--text {
+		width: 50%;
+		h3 {
+			margin-top: 50px;
+			margin-bottom: 0px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+		h5 {
+			display: inline-block;
+			margin: 5px 10px 0px 10px;
+		}
+		.button-container {
+			display: block;
+		}
+		button {
+			margin: 20px 20px 0px 0px;
+			width: 150px;
+			background: white;
+			transition: 0.3s all ease;
+			color: $secondaryColor;
+			border: 2px solid $secondaryColor;
+		}
+		button:hover {
+			background: darkcyan;
+			color: white;
+			border: 2px solid darkcyan;
+		}
+	}
+	.work__cell--img {
+		width: 50%;
+		img {
+			width: 100%;
+		}
+
+	}
 }
+
+
+
+

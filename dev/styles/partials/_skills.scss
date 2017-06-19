@@ -1,13 +1,75 @@
 .skills {
+	background: $primaryColor;
+	display: flex;
+	flex-direction: column;
+	.skills__title {
+		color: white;
+		text-align: center;
+		position: relative;
+		h2 {
+			color: white;
+			margin-bottom: 0;
+			letter-spacing: 10px;
+		}
+		h2:after {
+			content: '';
+			width: 125px;
+			height: 2px;
+			background: white;
+			position: absolute;
+			display: inline-block;
+			bottom: 30%;
+			left: 50%;
+			margin-left: -65px;
+			
+		} 
+		h5 {
+			margin-top: 60px;
+			color: white;
+		}
+	}
+	.skill__cell--container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		h5 {
+			font-size: 16px;
+			color: white;
+		}
+	}
 	.skills__cell {
-		color: black;
+		color: white;
 		font-size: 100px;
+		width: 16.6%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		flex-direction: column;
+		text-align: center;
+
 	}
 	.sublime {
 		width: 100px;
+		align-self: center;
 	}
+
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
 }
 
-button {
-	text-transform: uppercase;
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.skills .skills__cell {
+		width: 33.3%;
+	}
+ 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.skills .skills__cell {
+		width: 50%;
+	}
 }

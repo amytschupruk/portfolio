@@ -1,7 +1,48 @@
 .about {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	padding: 10% 10% 0% 10%;
 	img {
-		-webkit-clip-path: circle(50% at 50% 50%);
-		clip-path: circle(50% at 50% 50%);
 		width: 50%;
+		position: absolute;
+		top: 12%;
+		left: 0;
+		z-index: -1;
 	}
+	.about__text {
+		text-align: right;
+		h2 {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		h5 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		p {
+			margin-left: 51%;
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.about h2 {
+		font-size: 30px;
+	}
+ 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
 }
