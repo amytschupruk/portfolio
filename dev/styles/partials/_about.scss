@@ -34,6 +34,7 @@
 				color: $secondaryColor;
 				text-decoration: none;
 				border-bottom: 2px solid darkcyan;
+				transition: 0.3s all ease;
 			}
 			a:hover {
 				border-bottom: 2px solid white;

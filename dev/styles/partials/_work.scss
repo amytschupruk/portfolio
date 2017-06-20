@@ -24,6 +24,7 @@
 	h5 {
 		color: white;
 		margin-top: 60px;
+
 	}
 }
 
@@ -31,9 +32,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 70px;
-	h5 {
-		font-size: 18px;
-	}
 	.work__cell--text {
 		width: 50%;
 		h3 {
@@ -43,8 +41,18 @@
 			letter-spacing: 3px;
 		}
 		h5 {
+			font-size: 18px;
 			display: inline-block;
 			margin: 5px 10px 0px 10px;
+			a {
+				color: $secondaryColor;
+				border-bottom: 2px solid darkcyan;
+				text-decoration: none;
+				transition: 0.3s all ease;
+			}
+			a:hover {
+				border-bottom: 2px solid white;
+			}
 		}
 		.button-container {
 			display: block;
