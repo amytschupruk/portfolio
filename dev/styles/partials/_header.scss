@@ -9,10 +9,13 @@
 }
 
 header {
-	height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  .header-hero {
+    height: 100vh;
+     display: flex;
+     flex-direction: column;
+     position: relative; 
+     width: 100%;
+  }
   .bg-img-container-desktop {
     position: absolute;
     width: 60%;
@@ -26,14 +29,22 @@ header {
     width: 60%;
     right: 0;
     top: 15%;
+    bottom: 0;
     height: 100%;
     background: darkcyan;
     z-index: -2;
 
   }
+  nav {
+    height: 90px;
+    background: white;
+    display: flex;
+    align-items: center;
+  }
   	#nav-icon {
     float: right;
-    margin-top: 20px;
+    margin: 0;
+
 	}
 	.menu {
 		position: absolute;
@@ -41,8 +52,9 @@ header {
 		background: white;
 		padding: 50px 20px;
 		right: 0;
-		margin-top: 120px;
+		margin-top: 100px;
 		margin-right: 10%;
+    z-index: 999;
 	}
 	.header-text {
 		text-align: left;

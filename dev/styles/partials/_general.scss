@@ -1,6 +1,7 @@
 body {
 	max-width: 1880px;
 	overflow-x: hidden;
+	margin: 0 auto;
 	.wrapper {
 		width: 80%;
 		margin: 0 auto;
@@ -37,7 +38,7 @@ h5 {
 
 p {
 	font-family: $tertiaryFont;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 25px;
 	color: $secondaryColor;
 }
@@ -114,5 +115,11 @@ footer {
 	h2 {
 		font-size: 60px;
 	}
+	h5 {
+		font-size: 22.5px;
+	}
+	p {
+		font-size: 16px;
+	} 
 
 }

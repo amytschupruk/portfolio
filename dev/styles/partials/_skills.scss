@@ -63,6 +63,7 @@
 @media (max-width: 768px) {
 	.skills .skills__cell {
 		width: 33.3%;
+		margin-bottom: 25px;
 	}
  
 }
@@ -70,9 +71,15 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	.skills .skills__cell {
-		width: 50%;
+		font-size: 60px;
+	}
+	.skills .skill__cell--container h5 {
+		font-size: 0px;
 	}
 	.skills .skills__title h2:after {
 		bottom: 40%;
+	}
+	.skills .sublime {
+		width: 60px;
 	}
 }
