@@ -19,6 +19,7 @@ header {
   .bg-img-container-desktop {
     position: absolute;
     width: 60%;
+    top: 15%;
     right: 0;
     height: 100%;
     z-index: -1;
@@ -33,7 +34,7 @@ header {
 
   }
   nav {
-    height: 90px;
+    height: 87.5px;
     background: white;
     display: flex;
     align-items: center;
@@ -57,7 +58,7 @@ header {
 		text-align: left;
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 87.5vh;
     justify-content: center;
     margin-right: 0;
     width: 450px;
